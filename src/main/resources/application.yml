@@ -1,0 +1,23 @@
+---
+spring:
+  # HTTP ENCODING
+  http:
+    encoding.charset: UTF-8
+    encoding.enable: true
+    encoding.force: true
+  datasource:
+    name: mydb
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/guoanjiatest
+    username: root
+    password: cuishen123
+    driver-class-name: com.mysql.jdbc.Driver
+  hikari :
+    connection-timeout: 60000
+    maximum-pool-size: 5
+
+server:
+  port: 8001
+
+mybatis:
+  typeAliasesPackage: com.example.gatz.entity
